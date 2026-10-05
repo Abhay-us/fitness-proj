@@ -56,7 +56,7 @@ const ExerciseCard = ({ exercise }) => {
                     color: '#000',
                     fontWeight: 'bold',
                     fontSize: {
-                        lg: '24px',
+                        lg: '16px',
                         xs: '20px'
                     },
                     mt: '11px',

@@ -49,17 +49,16 @@ body {
 }
 
 .detail-image {
-    width: 729px;
-    height: 742px;
+    width: 700px;
+    height: 700px;
 }
 
 .hero-banner-img {
     position: absolute;
     right: 40px;
     top: 0px;
-    width: 700px;
+    width: 600px;
     height: 750px;
-    margin-top: 30px;
 
 }
 

@@ -7,7 +7,7 @@ const Navbar = () => (
   <Stack
     direction="row"
     sx={{
-      justifyContent: "space-around",
+
       gap: { sm: '123px', xs: '40px' },
       mt: { sm: '32px', xs: '20px' }
     }}
@@ -20,7 +20,7 @@ const Navbar = () => (
         style={{
           width: '48px',
           height: '48px',
-          margin: '0px -270px'
+          margin: '0px 40px'
         }}
       />
     </Link>
