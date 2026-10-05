@@ -1,5 +1,5 @@
 import { Typography, Box, Stack } from "@mui/material";
-import HorizontalScrollbar from "./HorizontalScrollbar";
+import HorizontalScrollBar from "./HorizontalScrollBar";
 import Loader from "./Loader";
 import exercisesData from "../utils/exercises.json";
 
@@ -58,7 +58,7 @@ const SimilarExercises = ({ exerciseDetail }) => {
                 }}
             >
                 {targetMuscleExercises.length !== 0 ? (
-                    <HorizontalScrollbar data={targetMuscleExercises} />
+                    <HorizontalScrollBar data={targetMuscleExercises} />
                 ) : (
                     <Loader />
                 )}
@@ -101,7 +101,7 @@ const SimilarExercises = ({ exerciseDetail }) => {
                 }}
             >
                 {bodyPartExercises.length !== 0 ? (
-                    <HorizontalScrollbar data={bodyPartExercises} />
+                    <HorizontalScrollBar data={bodyPartExercises} />
                 ) : (
                     <Loader />
                 )}
