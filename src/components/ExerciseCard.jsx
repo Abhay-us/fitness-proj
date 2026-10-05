@@ -1,18 +1,32 @@
 import { Link } from 'react-router-dom';
 import { Button, Stack, Typography } from '@mui/material';
+import { getExerciseImage } from '../utils/helper';
+import { useEffect, useState } from 'react';
 
 const ExerciseCard = ({ exercise }) => {
+
+    const [imageUrl, setImageUrl] = useState(null);
+
+    useEffect(() => {
+        const loadImage = async () => {
+            const url = await getExerciseImage(exercise.imgGif);
+            setImageUrl(url);
+        };
+
+        loadImage();
+    }, [exercise.imgGif]);
+
     return (
         <Link
             className="exercise-card"
             to={`/exercise/${exercise.id}`}
         >
             <img
-                src={exercise.imgGif}
+                src={imageUrl}
                 alt={exercise.name}
                 loading="lazy"
                 style={{
-                    marginTop:'50px',
+                    marginTop: '50px',
                     width: "250px",
                     height: "250px",
                     objectFit: "contain",
